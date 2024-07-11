@@ -1,4 +1,4 @@
-import Cell from "./Cells";
+import Cell from "./Cell";
 
 const Board = ({data, handleCellClick, handleContextMenu}) => {
     return(
