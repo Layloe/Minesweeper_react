@@ -7,7 +7,7 @@ const Board = ({data, handleCellClick, handleContextMenu}) => {
              datarow.map(dataitem => 
                 <div key={`${dataitem.y}-${dataitem.x}`}>
                     <Cell onClick={() => handleCellClick(dataitem.y, dataitem.x)} 
-                    cMenu={() => handleCellClick(e, dataitem.y, dataitem.x)}
+                    cMenu={() => handleContextMenu(e, dataitem.y, dataitem.x)}
                     value={dataitem}
                     />
                 </div>
